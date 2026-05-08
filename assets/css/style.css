@@ -1,0 +1,88 @@
+* {
+    .portfolio-item
+
+{
+    height: 420px;
+    border-radius: 28px;
+    background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1200&auto=format&fit=crop') center/cover;
+    transition: .25s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+/* BOOKING */
+.booking {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-box {
+    width: 100%;
+    max-width: 760px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 34px;
+    padding: 60px;
+    text-align: center;
+}
+
+form {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input,
+select {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    color: white;
+    padding: 18px;
+    border-radius: 16px;
+    outline: none;
+}
+
+.full-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    padding: 50px 7%;
+    border-top: 1px solid rgba(255,255,255,.05);
+    display: flex;
+    justify-content: space-between;
+    color: #9ca3af;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px) {
+
+    .about,
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
