@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
     <div class="service-card">
+    <link rel="stylesheet" href="assets/css/style.css">
       <div class="service-icon">🚘</div>
       <h3>Korekta lakieru</h3>
       <p>Usuwanie zarysowań i przywracanie głębi koloru.</p>
